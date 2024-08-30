@@ -21,7 +21,15 @@ decorations_theme_variant = "Dark"
 history = 100000
 multiplier = 3
 #
-## Font
+# Font
 [font]
 normal = { family = "consolas", style = "Bold" }
 italic = { family = "consolas", style = "Bold Italic" }
+#
+# Cursor
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+#
+# Terminal
+[terminal]
+osc52 = "CopyPaste"
