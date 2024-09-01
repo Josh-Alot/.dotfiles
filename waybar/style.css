@@ -1,0 +1,78 @@
+* {
+  border: none;
+  border-radius: 12;
+  font-family: Hack-Nerd, sans-serif;
+  font-size: 15px;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+#window {
+  background-color: #414868;
+  color: #a9b1d6;
+  padding: 0 12px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  padding: 0 0;
+}
+
+#workspaces {
+  background-color: #ff007c;
+}
+
+#workspaces button {
+  color: #a9b1d6;
+}
+
+#idle_inhibitor {
+  min-width: 40px;
+  background-color: #565f89;
+}
+
+#idle_inhibitor.activated {
+  background-color: #c3e88d;
+}
+
+#bluetooth {
+  min-width: 35px;
+  background-color: #414868;
+  font-size: 20px;
+  color: #ffc777;
+}
+
+#bluetooth.connected {
+  background-color: #41a6b5;
+  color: #1f2335;
+}
+
+#bluetooth.off {
+  background-color: #c53b53;
+}
+
+#bluetooth.disabled {
+  background-color: transparent;
+}
+
+#pulseaudio {
+  background-color: #9d7cd8;
+}
+
+#hardware {
+  background-color: #ff757f;
+  color: #24283b;
+  padding: 0 12px;
+}
+
+#misc {
+  background-color: #3d59a1;
+  padding: 0 12px;
+}
+
+#battery {
+  background-color: #c3e88d;
+  padding: 0 12px;
+}

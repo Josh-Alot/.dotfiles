@@ -1,0 +1,113 @@
+{
+  // bar config
+  "layer": "bottom",
+  "position": "top",
+  "height": 30,
+  "margin-top": 8,
+  "margin-left": 20,
+  "margin-right": 20,
+  "spacing": 10,
+  // loading modules
+  "modules-left": [
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "bluetooth",
+    "pulseaudio",
+    "group/hardware",
+    "group/misc",
+    "custom/power",
+    "battery"
+  ],
+  // creating groups
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "disk",
+      "cpu",
+      "memory"
+    ],
+  },
+  "group/misc": {
+    "orientation": "horizontal",
+    "modules": [
+      "backlight",
+      "clock"
+    ],
+  },
+  // modules config
+  "hyprland/window": {
+    "format": "{title}",
+    "rewrite": {
+      "(.*) - Brave": "Brave Browser",
+    },
+    "separate-outputs": true,
+    "icon": false,
+  },
+  "hyprland/workspaces": {
+    "active-only": "true",
+    "format": "{icon}", 
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "urgent": ""
+    },
+    "persistent-workspaces": {
+      "eDP-1": [1, 2]
+    }
+  },
+  "idle_inhibitor": {
+    "format": "{icon} ",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+  },
+  "bluetooth": {
+    "format": "{icon}",
+    "format-disabled": "",
+    "format-icons": {
+      "default": "",
+    },
+    "tooltip-format": "{status}"
+  },
+  "pulseaudio": {
+    "format": "{volume}%"
+  },
+  "disk": {
+    "interval": 120,
+    "format": "   {percentage_used}% | ",
+    "path": "/home",
+    "tooltip": "true",
+    "tooltip-format": "{used} used on {path}"
+  },
+  "cpu": {
+    "interval": 60,
+    "format": "   {usage}% | "
+  },
+  "memory": {
+    "interval": 60,
+    "format": "   {percentage}%"
+  },
+  "backlight": {
+    "interval": 1,
+    "format": "  {percent}% | ",
+    "tooltip": false
+  },
+  "clock": {
+    "interval": 60,
+    "format": "   {:%H:%M}",
+    "tooltip": false,
+  },
+  "battery": {
+    "interval": 120,
+    "format": "{icon}   {capacity}%",
+    "format-icons": [
+      "", "", "", "", "",
+    ]
+  }
+}
