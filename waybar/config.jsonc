@@ -76,7 +76,10 @@
     "tooltip-format": "{status}"
   },
   "pulseaudio": {
-    "format": "{volume}%"
+    "format": "{icon}   {volume}%",
+    "format-icons": [
+      "", "", ""
+    ],
   },
   "disk": {
     "interval": 120,
