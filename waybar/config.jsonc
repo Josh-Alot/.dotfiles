@@ -20,8 +20,8 @@
     "pulseaudio",
     "group/hardware",
     "group/misc",
-    "custom/power",
-    "battery"
+    "battery",
+    "custom/power"
   ],
   // creating groups
   "group/hardware": {
@@ -112,5 +112,9 @@
     "format-icons": [
       "", "", "", "", "",
     ]
-  }
+  },
+  "custom/power": {
+    "format": "",
+    "on-click": "rofi -show p -modi p:rofi-power-menu"
+  },
 }

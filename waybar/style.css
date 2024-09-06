@@ -78,3 +78,9 @@ window#waybar.empty #window {
   background-color: #c3e88d;
   padding: 0 12px;
 }
+
+#custom-power {
+  background-color: #1f2335;
+  color: #c0caf5;
+  padding: 0 16px 0 12px;
+}
