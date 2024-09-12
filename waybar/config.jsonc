@@ -18,6 +18,7 @@
     "idle_inhibitor",
     "bluetooth",
     "pulseaudio",
+    "network",
     "group/hardware",
     "group/misc",
     "battery",
@@ -80,6 +81,12 @@
     "format-icons": [
       "", "", ""
     ],
+  },
+  "network": {
+    "format-ethernet": "",
+    "format-wifi": "",
+    "tooltip": true,
+    "tooltip-format": "{essid}"
   },
   "disk": {
     "interval": 120,

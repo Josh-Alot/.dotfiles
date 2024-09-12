@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 12;
-  font-family: Hack-Nerd, sans-serif;
+  font-family: FiraMono, sans-serif;
   font-size: 15px;
 }
 
@@ -35,6 +35,7 @@ window#waybar.empty #window {
 
 #idle_inhibitor.activated {
   background-color: #c3e88d;
+  color: #1f2335;
 }
 
 #bluetooth {
@@ -63,6 +64,11 @@ window#waybar.empty #window {
   min-width: 60px;
 }
 
+#network {
+  background-color: #1f2335;
+  padding: 0 17px 0 8px;
+}
+
 #hardware {
   background-color: #ff757f;
   color: #24283b;
@@ -76,6 +82,7 @@ window#waybar.empty #window {
 
 #battery {
   background-color: #c3e88d;
+  color: #292e42;
   padding: 0 12px;
 }
 
