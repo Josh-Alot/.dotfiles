@@ -17,7 +17,7 @@
   "modules-right": [
     "idle_inhibitor",
     "bluetooth",
-    "pulseaudio",
+    "wireplumber",
     "network",
     "group/hardware",
     "group/misc",
@@ -51,7 +51,7 @@
   },
   "hyprland/workspaces": {
     "active-only": "true",
-    "format": "{icon}", 
+    "format": "{id}", 
     "format-icons": {
       "active": "",
       "default": "",
@@ -76,7 +76,7 @@
     },
     "tooltip-format": "{status}"
   },
-  "pulseaudio": {
+  "wireplumber": {
     "format": "{icon}   {volume}%",
     "format-icons": [
       "", "", ""
